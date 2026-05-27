@@ -1,0 +1,28 @@
+#bigCont{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+   
+}
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid pink;
+    max-height: 100vh;
+    height: 600px;
+    width: 600px;
+}
+
+#container div {
+    --n: var(--items-per-row, 16);
+    flex: 0 0 calc(100% / var(--n));
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ccc;
+    aspect-ratio: 1 / 1;
+}
+
+
